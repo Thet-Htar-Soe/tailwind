@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Position</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/css">
+        .containers {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            margin: 20px;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is tailwind css</h3>
+
+    <div class="containers relative">
+        <div class="box bg-yellow-500 absolute top-1/2 left-1/2 z-10"></div>
+        <div class="bg-indigo-500 absolute top-3.5 inset-y-0" style="width:50px;"></div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- 
+    relative
+    absolute
+    static
+    fixed
+
+    inset-1/2 
+    inset-x-1/2
+    inset-y-1/2
+
+    top-1/2
+    left-1/2
+    right-1/2
+    bottom-1/2
+
+    (px)
+    (0,0.5,1,1.5,2,2.5,3,3.5,4)
+    (5,6,7,8,9,10,11,12)
+    (14,16)
+    (20,24,28,...,64)
+    (72,80)
+    (96)
+
+    z-10
+    z-20
+    z-30
+    z-40
+    z-50
+    z-auto
+
+
+-->

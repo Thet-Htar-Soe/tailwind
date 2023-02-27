@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Display</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/css">
+        .box {
+            width: 400px;
+            height: 200px;
+            background-color: silver;
+            margin-bottom: 20px;
+        }
+        
+        .b-box {
+            width: 400px;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+        
+        .div {
+            width: 100px;
+            height: 100px;
+        }
+        
+        h1 {
+            width: 500px;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is tailwind css</h3>
+
+    <div class="box flex justify-start ">
+        <div class="div bg-violet-500"></div>
+        <div class="div bg-lime-500"></div>
+    </div>
+
+    <div class="box flex justify-center">
+        <div class="div bg-violet-500"></div>
+        <div class="div bg-lime-500"></div>
+    </div>
+
+    <div class="box flex justify-around ">
+        <div class="div bg-violet-500"></div>
+        <div class="div bg-lime-500"></div>
+    </div>
+
+    <div class="box flex justify-between">
+        <div class="div bg-violet-500"></div>
+        <div class="div bg-lime-500"></div>
+    </div>
+
+    <div class="box flex justify-evenly">
+        <div class="div bg-violet-500"></div>
+        <div class="div bg-lime-500"></div>
+    </div>
+
+    <hr/>
+
+    <div class="b-box bg-black flex justify-center items-start">
+        <div class="div bg-indigo-500"></div>
+        <div class="div bg-emerald-500"></div>
+    </div>
+
+    <div class="b-box bg-black flex justify-center items-end">
+        <div class="div bg-indigo-500"></div>
+        <div class="div bg-emerald-500"></div>
+    </div>
+
+    <div class="b-box bg-black flex justify-center items-center">
+        <div class="div bg-amber-500"></div>
+        <div class="div bg-emerald-500"></div>
+    </div>
+
+
+    <h1 class="inline bg-purple-500 text-white">Hey i am web developer</h1>
+    <h1 class="inline-block bg-cyan-500 text-white">using frontend html, css, js, jq, bs and tw </h1>
+    <span class="block bg-sky-500 text-white">using backend php</span>
+</body>
+
+</html>
+
+<!-- 
+    display:flex;                        flex
+    display:inline;                      inline
+    display:block;                       block
+    display:none;                        hidden
+    display:grid;                        grid
+
+    ------------------------------
+
+    justify-content:start;               justify-start
+    justify-content:end;                 justify-end
+    justify-content:center;              justify-center
+    justify-content:space-between;       justify-between
+    justify-content:space-around;        justify-around
+    justify-content:space-evenly;        justify-evenly;
+
+    ------------------------------
+
+    align-items:start;                   items-start
+    align-items:end;                     items-end
+    align-items:center;                  items-center
+
+-->

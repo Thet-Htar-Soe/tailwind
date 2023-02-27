@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practise-Three</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/css">
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+
+    .color-box {
+      width: 150px;
+      height: 150px;
+      margin: 25px;
+      background-color: steelblue;
+    }
+    
+    .containers {
+      width: 400px;
+      height: 400px;
+      background-color: black;
+      margin: 20px;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>This is Tailwind</h1>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">31-Scale(0,50,75,100,125,150)</h1>
+  <br/>
+  <div class="color-box hover:scale-50">hover:scale-50=>hi</div>
+  <div class="color-box hover:scale-100">hover:scale-100(100 is normal size)=>hi</div>
+  <div class="color-box hover:scale-x-150">hover:scale-x-125=>hi</div>
+  <div class="color-box hover:scale-y-125">hover:scale-y-125=>hi</div>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">32-Translate</h1>
+  <div class="color-box hover:translate-x-full">hover:translate-x-full=>hi</div>
+  <div class="color-box hover:translate-x-96">hover:translate-x-96=>hi</div>
+  <div class="color-box hover:translate-x-1/2">hover:translate-x-1/2=>hi</div>
+  <div class="color-box hover:translate-y-1/2">hover:translate-y-1/2=>hi</div>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">33-TransformOrigin</h1>
+  <div class="box border-4">
+    <div class="color-box origin-center rotate-45">origin-center rotate-45=>hi</div>
+  </div>
+  <br/>
+  <div class="box border-4">
+    <div class="color-box origin-top rotate-45">origin-top rotate-45=>hi</div>
+  </div>
+  <br/>
+  <div class="box border-4">
+    <div class="color-box origin-bottom rotate-45">origin-bottom rotate-45=>hi</div>
+  </div>
+  <br/>
+  <div class="box border-4">
+    <div class="color-box origin-left rotate-45">origin-left rotate-45=>hi</div>
+  </div>
+  <br/>
+  <div class="box border-4">
+    <div class="color-box origin-right rotate-45">origin-right rotate-45=>hi</div>
+  </div>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">34-Transition</h1>
+  <div class="box border-4">
+    <div class="color-box hover:rotate-45 transition duration-1000">hover:rotate-45 transition duration-1000=>hi</div>
+  </div>
+  <div class="box border-4">
+    <div class="color-box hover:rotate-45 hover:delay-500 transition duration-700">hover:rotate-45 hover:delay-500 transition duration-700=>hi</div>
+  </div>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">35-ResizeAndUserSelect</h1>
+  <label for="one">bio</label>
+  <textarea rows="5" id="one" class="border-4 resize-none">resize-none</textarea>
+  <br/>
+  <label for="two">bio</label>
+  <textarea rows="5" id="two" class="border-4 resize-x">resize-x</textarea>
+  <br/>
+  <label for="three">bio</label>
+  <textarea rows="5" id="three" class="border-4 resize-y">resize-y</textarea>
+  <br/>
+  <label for="four">bio</label>
+  <textarea rows="5" id="four" class="border-4 resize">resize</textarea>
+  <hr/>
+  <p class="select-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+  <p class="select-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+  <p class="select-all">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+  <p class="select-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+  <hr/>
+  <br/>
+  <select>
+    <option class="appearance-none" selected disabled>pls select</option>
+    <option>one</option>
+    <option>two</option>
+    <option>three</option>
+  </select>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">36-color(gray,red,green,blue,pink)(50,100,200,...,900)</h1>
+  <p class="text-gray-500">text-gray-500=>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+  <p class="text-red-500">text-red-500=>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+  <p class="text-green-500">text-green-500=>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+  <p class="text-blue-500">text-blue-500=>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+  <p class="text-pink-500">text-pink-500=>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">37-DecorationColor</h1>
+  <p class="underline decoration-2 decoration-solid decoration-pink-400">underline decoration-2 decoration-solid decoration-pink-400=>How are You?</p>
+  <br/>
+  <p class="overline decoration-2 decoration-double decoration-red-400">overline decoration-2 decoration-double decoration-red-400=>How are You?</p>
+  <br/>
+  <p class="line-through decoration-2 decoration-dotted decoration-green-400">line-through decoration-2 decoration-dotted decoration-green-400=>How are You?</p>
+  <br/>
+  <p class="underline decoration-2 decoration-dashed decoration-blue-400">underline decoration-2 decoration-dashed decoration-blue-400=>How are You?</p>
+  <br/>
+  <p class="underline decoration-4 decoration-wavy decoration-gray-400">underline decoration-4 decoration-wavy decoration-gray-400=>How are You?</p>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">38-backgroundColor</h1>
+  <div class="box bg-gray-600 hover:bg-pink-400">bg-gray-600 hover:bg-pink-400=>hi</div>
+  <div class="box bg-red-600 hover:bg-blue-600">bg-red-600 hover:bg-blue-600=>hi</div>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">39-shadowColor</h1>
+  <div class="box shadow-sm shadow-red-800">shadow-sm shadow-red-800</div>
+  <div class="box shadow-xl shadow-pink-800">shadow-xl shadow-pink-800</div>
+  <br/>
+  <div class="box shadow-inner shadow-green-800">shadow-inner shadow-green-800</div>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">40-Float</h1>
+  <div class="box bg-pink-300">
+    <img src="./img/miko.jpg" style="width:100px;height:100px;" class="float-left"/>
+    <p>float-left=>Lorem Ipsum is simply dummy text.</p>
+  </div>
+  <br/>
+  <div class="box bg-pink-300">
+    <img src="./img/miko.jpg" style="width:100px;height:100px;" class="float-left"/>
+    <p class="clear-left">float-left with clear-left=>Lorem Ipsum is simply dummy text.</p>
+  </div>
+  <br/>
+  <div class="box bg-pink-300">
+    <img src="./img/miko.jpg" style="width:100px;height:100px;" class="float-right"/>
+    <p>float-right=>Lorem Ipsum is simply dummy text.</p>
+  </div>
+  <br/>
+  <div class="box bg-pink-300">
+    <img src="./img/miko.jpg" style="width:100px;height:100px;" class="float-right"/>
+    <p class="clear-right">float-right with clear-right=>Lorem Ipsum is simply dummy text.</p>
+  </div>
+  <br/>
+  <div class="box bg-pink-300">
+    <img src="./img/miko.jpg" style="width:100px;height:100px;" class="float-right"/>
+    <p class="clear-both">float-right with clear-both=>Lorem Ipsum is simply dummy text.</p>
+  </div>
+  <br/>
+  <div class="box bg-pink-300">
+    <img src="./img/miko.jpg" style="width:100px;height:100px;" class="float-right"/>
+    <p class="clear-none">float-right with clear-none=>Lorem Ipsum is simply dummy text.</p>
+  </div>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">41-position</h1>
+  <div class="containers relative">
+    <img src="./img/miko.jpg" style="width:100px;height:100px;" class="absolute top-1/2 right-1/2"/>
+    <div style="width:100px;" class="absolute top-4.5 inset-y-0 bg-pink-400"></div>
+  </div>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">42-visiblity</h1>
+  <p class="visible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni aliquam voluptates eligendi dolore fugiat! Eum quia cum iure iusto facere quae rerum sed quisquam voluptatibus culpa ut commodi, aliquid sapiente.</p>
+  <p class="invisible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni aliquam voluptates eligendi dolore fugiat! Eum quia cum iure iusto facere quae rerum sed quisquam voluptatibus culpa ut commodi, aliquid sapiente.</p>
+  <p class="visible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni aliquam voluptates eligendi dolore fugiat! Eum quia cum iure iusto facere quae rerum sed quisquam voluptatibus culpa ut commodi, aliquid sapiente.</p>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">43-display</h1>
+  <div class="containers flex justify-center text-white">
+    containers flex justify-center
+    <div class="bg-blue-600" style="width:50px;height:50px"></div>
+    <div class="bg-cyan-500" style="width:50px;height:50px"></div>
+  </div>
+  <div class="containers flex justify-around text-white">
+    flex justify-around
+    <div class="bg-blue-600" style="width:50px;height:50px"></div>
+    <div class="bg-cyan-500" style="width:50px;height:50px"></div>
+  </div>
+  <div class="containers flex justify-around items-end text-white">
+    flex justify-around items-end
+    <div class="bg-blue-600" style="width:50px;height:50px"></div>
+    <div class="bg-cyan-500" style="width:50px;height:50px"></div>
+  </div>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">44-order</h1>
+  <div class="containers grid">
+    <div class="bg-blue-600 order-2" style="width:50px;height:50px">2</div>
+    <div class="bg-cyan-500 order-last" style="width:50px;height:50px">0</div>
+  </div>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">45-width&height</h1>
+  <div class="bg-indigo-400 w-screen h-auto">w-screen h-auto</div>
+  <div class="bg-indigo-400 w-1/2 h-screen">w-1/2 h-full</div>
+  <br/>
+  <hr/>
+  <!-- ----------------------------------- -->
+  <br/>
+  <h1 class="text-3xl">46-placeItems</h1>
+</body>
+</html>

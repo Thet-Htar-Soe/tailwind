@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Background Repeat</title>
+    <!-- <link href="./tailwind.css" rel="stylesheet" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/css">
+        .bg-imgs {
+            background-image: url('./img/download.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Tailwind CSS</h1>
+
+    <div class="w-96 h-96 bg-repeat bg-center border-2 border-cyan-500 m-8 bg-imgs">div1</div>
+
+    <div class="w-96 h-96 bg-no-repeat bg-center border-2 border-cyan-500 m-8 bg-imgs">div1</div>
+
+    <div class="w-96 h-96 bg-repeat-x bg-center border-2 border-cyan-500 m-8 bg-imgs">div1</div>
+
+    <div class="w-96 h-96 bg-repeat-y bg-center border-2 border-cyan-500 m-8 bg-imgs">div1</div>
+
+    <div class="w-96 h-96 bg-repeat-round bg-center border-2 border-cyan-500  m-8 bg-imgs">div1</div>
+
+    <div class="w-96 h-96 bg-repeat-space bg-center border-2 border-cyan-500 m-8 bg-imgs">div1</div>
+</body>
+
+</html>
+
+
+<!--
+
+    background-repeat:repeat;                    background-repeat
+    background-repeat:no-repeat;                 background-no-repeat
+    background-repeat:repeat-x;                  background-repeat-x
+    background-repeat:repeat-y;                  background-repeat-y
+
+    background-repeat:round;                     background-repeat-round
+    background-repeat:space;                     background-repeat-space
+    
+-->

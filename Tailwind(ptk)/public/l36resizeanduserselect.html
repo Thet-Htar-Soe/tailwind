@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resize and user-select</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body>
+    <h3>This is tailwind css</h3>
+
+    <label for="bio">Bio</label>
+    <textarea id="bio" class="resize-none" rows="5"></textarea>
+    <br/>
+
+    <label for="bio1">Bio</label>
+    <textarea id="bio1" class="resize-x" rows="5"></textarea>
+    <br/>
+
+    <label for="bio2">Bio</label>
+    <textarea id="bio2" class="resize-y" rows="5"></textarea>
+    <br/>
+
+    <label for="bio3">Bio</label>
+    <textarea id="bio3" class="resize" rows="5"></textarea>
+    <br/>
+
+
+    <hr/>
+
+    <p class="select-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+    <p class="select-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+    <p class="select-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+    <p class="select-all">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel id. Alias, animi officiis cupiditate atque nihil ea maxime quasi omnis laudantium aspernatur, est exercitationem quae, repudiandae enim excepturi temporibus?</p>
+
+    <hr/>
+
+    <select name="city" class="appearance-none">
+        <option selected disabled>Select Your City</option>
+        <option value="yg">Yangon</option>
+        <option value="mdy">Mandalay</option>
+        <option value="pku">Pakukku</option>
+    </select>
+
+
+</body>
+
+</html>
+
+
+<!--
+    resize : none;                       resize-none
+    resize : horizontal;                 resize-x
+    resize : vertical;                   resize-y
+    resize : both;                       resize
+-->
+
+<!--
+    user-select : none;                  select-none
+    user-select : auto;                  select-auto
+    user-select : text;                  select-text
+    user-select : all;                   select-all
+-->
+
+<!--
+    appearence-none
+-->
